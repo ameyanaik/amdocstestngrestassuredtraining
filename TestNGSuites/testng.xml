@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="My First TestNG Suite" thread-count="5" parallel="classes">
+    <test name="Calculator Tests">
+        <parameter name="number1" value="5"></parameter>
+        <parameter name="number2" value="6"></parameter>
+
+        <classes>
+            <class name="com.amdocs.training.CalculatorTest"/>
+            <class name="com.amdocs.training.ApplicationTest"/>
+        </classes>
+    </test> <!-- TestngRestAssured -->
+
+    <!--test name="API Tests">
+        <classes>
+            <class name="com.amdocs.training.restassured.TrelloTest"/>
+            <class name="com.amdocs.training.restassured.DummyRestApiTest"/>
+            <class name="com.amdocs.training.restassured.HttpBinTest"/>
+        </classes>
+    <test-->
+    <!-- TestngRestAssured -->
+
+</suite> <!-- Default Suite -->
